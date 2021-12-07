@@ -1,0 +1,185 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?z06eq0');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?z06eq0#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?z06eq0') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?z06eq0') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?z06eq0##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-anies-e-pinos-elasticos {
+  &:before {
+    content: $icon-anies-e-pinos-elasticos; 
+  }
+}
+.icon-arrow-downward {
+  &:before {
+    content: $icon-arrow-downward; 
+  }
+}
+.icon-arrow-forward {
+  &:before {
+    content: $icon-arrow-forward; 
+  }
+}
+.icon-arruelas {
+  &:before {
+    content: $icon-arruelas; 
+  }
+}
+.icon-barramento-blindado {
+  &:before {
+    content: $icon-barramento-blindado; 
+  }
+}
+.icon-check {
+  &:before {
+    content: $icon-check; 
+  }
+}
+.icon-clock {
+  &:before {
+    content: $icon-clock; 
+  }
+}
+.icon-diamond {
+  &:before {
+    content: $icon-diamond; 
+  }
+}
+.icon-estamparia {
+  &:before {
+    content: $icon-estamparia; 
+  }
+}
+.icon-eye {
+  &:before {
+    content: $icon-eye; 
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook; 
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home; 
+  }
+}
+.icon-html {
+  &:before {
+    content: $icon-html; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-linha-de-fixadores {
+  &:before {
+    content: $icon-linha-de-fixadores; 
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-map {
+  &:before {
+    content: $icon-map; 
+  }
+}
+.icon-marker {
+  &:before {
+    content: $icon-marker; 
+  }
+}
+.icon-metal-x-borracha {
+  &:before {
+    content: $icon-metal-x-borracha; 
+  }
+}
+.icon-molas-pratos {
+  &:before {
+    content: $icon-molas-pratos; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-pino-elastico {
+  &:before {
+    content: $icon-pino-elastico; 
+  }
+}
+.icon-plus {
+  &:before {
+    content: $icon-plus; 
+  }
+}
+.icon-send {
+  &:before {
+    content: $icon-send; 
+  }
+}
+.icon-spinner {
+  &:before {
+    content: $icon-spinner; 
+  }
+}
+.icon-target {
+  &:before {
+    content: $icon-target; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-usinagem {
+  &:before {
+    content: $icon-usinagem; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+
