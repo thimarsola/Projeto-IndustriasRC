@@ -2,7 +2,7 @@
 
 @each $color, $shade in $colors {
     @each $prop, $value in $shade {
-        @if $value == #{white} {
+        @if $value == white {
             .link-#{$color}-#{$prop} {
                 color: $value;
                 @include transition(all);

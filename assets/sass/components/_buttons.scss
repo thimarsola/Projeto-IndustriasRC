@@ -12,8 +12,8 @@
     line-height: 1.1 !important;
 
     font: {
-        family: var(--medium) !important;
-        size: 2rem;
+        family: var(--bold) !important;
+        size: var(--fs-200);
     }
 
     text-transform: uppercase;
@@ -43,27 +43,16 @@
                     @include transition(all);
                 }
             }
-        }@else if $color == neutral{
-            .btn-#{$color}-#{$prop} {
-                background-color: $value;
-                color: var(--clr-white-500);
-                @include transition(all);
-
-                &:hover {
-                    color: var(--clr-neutral-500);
-                    background-color: var(--clr-white-500);
-                    @include transition(all);
-                }
-            }
         }@else {
             .btn-#{$color}-#{$prop} {
                 background-color: $value;
                 color: var(--clr-blue-500);
-                @include transition(background-color);
+                @include transition(all);
 
                 &:hover {
+                  color: var(--clr-white-500);
                     background-color: darken($value, 10%);
-                    @include transition(background-color);
+                    @include transition(all);
                 }
             }
         }

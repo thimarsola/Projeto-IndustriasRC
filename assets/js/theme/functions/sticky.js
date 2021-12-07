@@ -1,10 +1,10 @@
 $(function(){
     $(window).on("scroll", function(){
        if($(window).scrollTop()){
-           $('.header').addClass('header--sticky');
+           $('.info').fadeOut();
        }
        else{
-           $('.header').removeClass('header--sticky');
+           $('.info').fadeIn();
        }
     });
 });

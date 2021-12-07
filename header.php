@@ -104,13 +104,19 @@
 </h1>
 
 <?php if(!is_404()): ?>
-<!--header-->
-<?php //get_template_part('template-parts/header/header', 'header'); ?>
-<!--end of header-->
+
+<!-- info -->
+<?php get_template_part('template-parts/header/header', 'info'); ?>
+<!-- end of infor -->
+
+<!-- header -->
+<?php get_template_part('template-parts/header/header', 'header'); ?>
+<!-- end of header -->
 
 <!-- whatsapp -->
 <?php get_template_part('template-parts/header/header', 'whatsapp'); ?>
 <!-- end of whatsapp -->
+
 <!-- main -->
 <main>
 <?php endif ?>

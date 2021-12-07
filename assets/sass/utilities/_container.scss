@@ -43,3 +43,10 @@
     padding: 0 calc(var(--gap) * 2);
     width: 100%;
 }
+
+.container-lg{
+  display: block;
+  margin: 0 auto;
+  padding: 0 calc(var(--gap) * 2);
+  max-width: 172rem;
+}
