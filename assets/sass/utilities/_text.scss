@@ -17,3 +17,11 @@
 .t-uppercase{
     text-transform: uppercase;
 }
+
+.t-bold{
+  font-family: var(--bold) !important;
+}
+
+.t-small{
+  font-size: 12px;
+}
