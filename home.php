@@ -12,4 +12,8 @@
 <?php get_template_part('template-parts/home/home', 'products'); ?>
 <!-- end of products -->
 
+<!-- certification -->
+<?php get_template_part('template-parts/home/home', 'certification'); ?>
+<!-- end of certification -->
+
 <?php get_footer(); ?>
