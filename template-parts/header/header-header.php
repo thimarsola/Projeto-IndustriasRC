@@ -27,13 +27,8 @@
                         <!-- nav -->
                         <nav class="header__container__navbar__section__container__nav">
                             <h2 class="d-none">Menu de Navegação</h2>
-                            <?php
-                            if(is_home()){
-                                wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => ''));
-                            }else {
-                                wp_nav_menu(array('theme_location' => 'header-menu', 'container_class' => ''));
-                            }
-                            ?>
+
+                            <?php wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => '')); ?>
                         </nav>
                         <!-- end of nav -->
                     </div>

@@ -35,15 +35,19 @@
         <div class="info__contact">
             <ul class="d-flex ai-center f-row gp-2">
                 <li>
-                    <a rel="nofollow noopener noreferrer" class="link-white-500 d-flex ai-center jc-center l-small" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC" target="_blank">
-                        <i class="icon-marker clr-primary-500 mr-1"></i>
-                        <small><?= CONTACT['address']; ?></small>
+                    <a rel="nofollow noopener noreferrer" class="link-white-500 l-small" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC" target="_blank">
+                        <address class="d-flex ai-center jc-center">
+                            <i class="icon-marker clr-primary-500 mr-1"></i>
+                            <small><?= CONTACT['address']; ?></small>
+                        </address>
                     </a>
                 </li>
                 <li>
-                    <a rel="nofollow noopener noreferrer" class="link-white-500 d-flex ai-center jc-center l-small" href="mailto:<?= CONTACT['mail']; ?>" title="Podemos conversar por e-mail?" target="_blank">
-                        <i class="icon-mail clr-primary-500 mr-1"></i>
-                        <small><?= CONTACT['mail']; ?></small>
+                    <a rel="nofollow noopener noreferrer" class="link-white-500 l-small" href="mailto:<?= CONTACT['mail']; ?>" title="Podemos conversar por e-mail?" target="_blank">
+                        <address class="d-flex ai-center jc-center">
+                            <i class="icon-mail clr-primary-500 mr-1"></i>
+                            <small><?= CONTACT['mail']; ?></small>
+                        </address>
                     </a>
                 </li>
             </ul>

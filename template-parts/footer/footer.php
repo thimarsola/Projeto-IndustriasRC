@@ -1,48 +1,210 @@
 <footer class="footer">
 
+    <!-- cta -->
+     <div class="footer__cta">
+         <div class="container">
+
+             <!-- row -->
+              <div class="footer__cta__row grid">
+
+                  <!-- card -->
+                   <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
+                       <i class="icon-marker f-6 clr-blue-500"></i>
+
+                       <!-- header -->
+                        <div class="footer__cta__row__card__header mt-2 mb-1">
+                            <h2 class="f-3 clr-white-500">Endereço</h2>
+                        </div>
+                       <!-- end of header -->
+
+                       <!-- body -->
+                        <div class="footer__cta__row__card__body">
+                            <address>
+                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC"><?= CONTACT['address']; ?></a>
+                            </address>
+                        </div>
+                       <!-- end of body -->
+
+                   </div>
+                  <!-- end of card -->
+
+                  <!-- card -->
+                   <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
+                       <i class="icon-phone f-6 clr-blue-500"></i>
+
+                       <!-- header -->
+                        <div class="footer__cta__row__card__header mt-2 mb-1">
+                            <h2 class="f-3 clr-white-500">Telefone</h2>
+                        </div>
+                       <!-- end of header -->
+
+                       <!-- body -->
+                        <div class="footer__cta__row__card__body">
+                            <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?"><?= CONTACT['phone']['01']; ?></a>
+                        </div>
+                       <!-- end of body -->
+
+                   </div>
+                  <!-- end of card -->
+
+                  <!-- card -->
+                   <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
+                       <i class="icon-mail f-6 clr-blue-500"></i>
+
+                       <!-- header -->
+                        <div class="footer__cta__row__card__header mt-2 mb-1">
+                            <h2 class="f-3 clr-white-500">E-mail</h2>
+                        </div>
+                       <!-- end of header -->
+
+                       <!-- body -->
+                        <div class="footer__cta__row__card__body">
+                            <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:<?= CONTACT['mail']; ?>" title="Vamos conversar por e-mail?"><?= CONTACT['mail']; ?></a>
+                        </div>
+                       <!-- end of body -->
+
+                   </div>
+                  <!-- end of card -->
+
+              </div>
+             <!-- end of row -->
+
+         </div>
+     </div>
+    <!-- end of cta -->
+
     <!-- content -->
-    <div class="footer__content bg-light-blue-500 py-6">
+    <div class="footer__content bg-blue-500">
         <div class="container">
 
-            <!-- brand -->
-            <div class="footer__content__brand d-flex jc-center ai-center mb-2">
-                <?= picture('logo-rodape', 'Clínica BF Endodontia', null, 'png'); ?>
-            </div>
-            <!-- end of brand -->
+            <!-- row -->
+             <div class="footer__content__row grid">
 
-            <!-- menu -->
-            <div class="footer__content__menu mb-6">
-                <nav class="footer__content__menu__nav">
-                    <h2 class="d-none">Menu de Navegação Rodapé</h2>
-                    <?php
-                    if (is_home()) {
-                        wp_nav_menu(array('theme_location' => 'footer-home', 'container_class' => ''));
-                    } else {
-                        wp_nav_menu(array('theme_location' => 'footer-menu', 'container_class' => ''));
-                    }
-                    ?>
-                </nav>
-            </div>
-            <!-- end of menu -->
+                 <!-- card -->
+                  <div class="footer__content__row__card clr-white-500">
+                      <img class="mb-4" src="<?= image('logo-rodape.svg', 'svg'); ?>" alt="Logo Indústrias RC">
 
-            <!-- social -->
-            <div class="footer__content__social t-center f-3">
-                <ul class="d-flex jc-center ai-center gp-4">
-                    <li>
-                        <a rel="nofollow noreferrer noopener" class="link-primary-500" href="<?= CONTACT['facebook'] ?>"
-                           title="Siga a BF Endodontia no Facebook" target="_blank"><i class="icon-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a rel="nofollow noreferrer noopener" class="link-primary-500" href="<?= CONTACT['instagram']
-                        ?>" title="Siga a BF Endodontia no Instagram" target="_blank"><i class="icon-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a rel="nofollow noreferrer noopener" class="link-primary-500" href="<?= CONTACT['youtube'] ?>"
-                           title="Siga a BF Endodontia no YouTube" target="_blank"><i class="icon-youtube"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <!-- end of social -->
+                      <!-- body -->
+                       <div class="footer__content__row__card__body t-justify mb-3">
+                           <p>As Indústrias RC fornecem usinagem para aplicação na indústria em geral, borracha e metal x borracha; barramentos blindados; estampados e soluções para elementos de fixação.</p>
+                       </div>
+                      <!-- end of body -->
+
+                      <!-- social -->
+                      <div class="footer__content__row__card__social">
+                          <ul class="d-flex ai-center f-row gp-2">
+                              <li>
+                                  <a rel="nofollow noopener noreferrer" class="l-small link-white-500" href="<?= CONTACT['facebook']; ?>" title="Siga as Indústrias RC no Facebook" target="_blank">
+                                      <i class="icon-facebook"></i>
+                                      <span class="d-none">facebook</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a rel="nofollow noopener noreferrer" class="l-small link-white-500" href="<?= CONTACT['instagram']; ?>" title="Siga as Indústrias RC no Instagram" target="_blank">
+                                      <i class="icon-instagram"></i>
+                                      <span class="d-none">instagram</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a rel="nofollow noopener noreferrer" class="l-small link-white-500" href="<?= CONTACT['linkedin']; ?>" title="Siga as Indústrias RC no Linkedin" target="_blank">
+                                      <i class="icon-linkedin"></i>
+                                      <span class="d-none">linkedin</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a rel="nofollow noopener noreferrer" class="l-small link-white-500" href="<?= CONTACT['youtube']; ?>" title="Siga as Indústrias RC no Youtube" target="_blank">
+                                      <i class="icon-youtube"></i>
+                                      <span class="d-none">youtube</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                      <!-- end of social -->
+                  </div>
+                 <!-- end of card -->
+
+                 <!-- card -->
+                  <div class="footer__content__row__card clr-white-500">
+
+                      <!-- header -->
+                       <div class="footer__content__row__card__header mb-3">
+                           <h2 class="f-3 clr-white-500">Mapa do site</h2>
+                       </div>
+                      <!-- end of header -->
+
+                      <!-- body -->
+                       <div class="footer__content__row__card__body t-justify mb-3">
+                           <?php wp_nav_menu(array('theme_location' => 'header-home', 'container_class' => '')); ?>
+                       </div>
+                      <!-- end of body -->
+                  </div>
+                 <!-- end of card -->
+
+                 <!-- card -->
+                  <div class="footer__content__row__card clr-white-500">
+
+                      <!-- header -->
+                       <div class="footer__content__row__card__header mb-3">
+                           <h2 class="f-3 clr-white-500">Contato</h2>
+                       </div>
+                      <!-- end of header -->
+
+                      <!-- body -->
+                       <div class="footer__content__row__card__body t-justify mb-3">
+                           <ul class="d-flex f-column gp-1">
+                               <li>
+                                   <p class="d-flex ai-center l-small">
+                                       <i class="icon-clock mr-1"></i>
+                                       Seg-Sex: 7:00 às 17:00
+                                   </p>
+                               </li>
+
+                               <li>
+                                   <address class="d-flex ai-center l-small">
+                                       <i class="icon-marker mr-1"></i>
+                                       <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC"><?= CONTACT['address']; ?></a>
+                                   </address>
+                               </li>
+
+                               <li>
+                                   <p class="d-flex ai-center l-small">
+                                       <i class="icon-phone mr-1"></i>
+                                       <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?"><?= CONTACT['phone']['01']; ?></a>
+                                   </p>
+                               </li>
+
+                               <li>
+                                   <p class="d-flex ai-center l-small">
+                                       <i class="icon-whatsapp mr-1"></i>
+                                       <?= whatsapp(formatPhone(CONTACT["whatsapp"]["number"]), CONTACT["whatsapp"]["message"], CONTACT["whatsapp"]["number"], 'link-white-500'); ?>
+                                   </p>
+                               </li>
+                           </ul>
+                       </div>
+                      <!-- end of body -->
+                  </div>
+                 <!-- end of card -->
+
+
+                 <!-- card -->
+                  <div class="footer__content__row__card clr-white-500">
+
+                      <!-- header -->
+                       <div class="footer__content__row__card__header mb-3">
+                           <h2 class="f-3 clr-white-500"><?= SITE['name']; ?></h2>
+                       </div>
+                      <!-- end of header -->
+
+                      <!-- body -->
+                       <div class="footer__content__row__card__body t-justify mb-3">
+                           <p>Aqui você encontra equipamentos e acessórios de qualidade, que atendem à todos os requisitos e normas, além de profissionais capacitados, que visam a qualidade do serviço e satisfação do cliente.</p>
+                       </div>
+                      <!-- end of body -->
+                  </div>
+                 <!-- end of card -->
+
+             </div>
+            <!-- end of row -->
 
         </div>
     </div>
@@ -51,7 +213,7 @@
     <!-- copyright -->
     <div class="footer__content__copyright py-1 t-center">
         <div class="container">
-            <p><small><?= date('Y'); ?> - <?= SITE['name']; ?> &COPY; - Todos os direitos reservados</small></p>
+            <p><small>&COPY; <?= date('Y'); ?> - <?= SITE['name']; ?> - Todos os direitos reservados</small></p>
         </div>
     </div>
     <!-- end of copyright -->

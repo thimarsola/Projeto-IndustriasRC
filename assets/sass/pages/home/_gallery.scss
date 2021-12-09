@@ -44,7 +44,7 @@
       grid-template-columns: repeat(3, 1fr);
 
       &__card{
-        height: 18rem;
+        height: 15rem;
 
         &:nth-child(1){
           grid-column: 1/3;
