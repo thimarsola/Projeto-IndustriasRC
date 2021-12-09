@@ -1,77 +1,79 @@
 <footer class="footer">
 
-    <!-- cta -->
-     <div class="footer__cta">
-         <div class="container">
+    <?php if(!is_page(['Contato', 'Blog']) || is_single()): ?>
+        <!-- cta -->
+         <div class="footer__cta">
+             <div class="container">
 
-             <!-- row -->
-              <div class="footer__cta__row grid">
+                 <!-- row -->
+                  <div class="footer__cta__row grid">
 
-                  <!-- card -->
-                   <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
-                       <i class="icon-marker f-6 clr-blue-500"></i>
+                      <!-- card -->
+                       <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
+                           <i class="icon-marker f-6 clr-blue-500"></i>
 
-                       <!-- header -->
-                        <div class="footer__cta__row__card__header mt-2 mb-1">
-                            <h2 class="f-3 clr-white-500">Endereço</h2>
-                        </div>
-                       <!-- end of header -->
+                           <!-- header -->
+                            <div class="footer__cta__row__card__header mt-2 mb-1">
+                                <h2 class="f-3 clr-white-500">Endereço</h2>
+                            </div>
+                           <!-- end of header -->
 
-                       <!-- body -->
-                        <div class="footer__cta__row__card__body">
-                            <address>
-                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC"><?= CONTACT['address']; ?></a>
-                            </address>
-                        </div>
-                       <!-- end of body -->
+                           <!-- body -->
+                            <div class="footer__cta__row__card__body">
+                                <address>
+                                    <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC"><?= CONTACT['address']; ?></a>
+                                </address>
+                            </div>
+                           <!-- end of body -->
 
-                   </div>
-                  <!-- end of card -->
+                       </div>
+                      <!-- end of card -->
 
-                  <!-- card -->
-                   <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
-                       <i class="icon-phone f-6 clr-blue-500"></i>
+                      <!-- card -->
+                       <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
+                           <i class="icon-phone f-6 clr-blue-500"></i>
 
-                       <!-- header -->
-                        <div class="footer__cta__row__card__header mt-2 mb-1">
-                            <h2 class="f-3 clr-white-500">Telefone</h2>
-                        </div>
-                       <!-- end of header -->
+                           <!-- header -->
+                            <div class="footer__cta__row__card__header mt-2 mb-1">
+                                <h2 class="f-3 clr-white-500">Telefone</h2>
+                            </div>
+                           <!-- end of header -->
 
-                       <!-- body -->
-                        <div class="footer__cta__row__card__body">
-                            <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?"><?= CONTACT['phone']['01']; ?></a>
-                        </div>
-                       <!-- end of body -->
+                           <!-- body -->
+                            <div class="footer__cta__row__card__body">
+                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?"><?= CONTACT['phone']['01']; ?></a>
+                            </div>
+                           <!-- end of body -->
 
-                   </div>
-                  <!-- end of card -->
+                       </div>
+                      <!-- end of card -->
 
-                  <!-- card -->
-                   <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
-                       <i class="icon-mail f-6 clr-blue-500"></i>
+                      <!-- card -->
+                       <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
+                           <i class="icon-mail f-6 clr-blue-500"></i>
 
-                       <!-- header -->
-                        <div class="footer__cta__row__card__header mt-2 mb-1">
-                            <h2 class="f-3 clr-white-500">E-mail</h2>
-                        </div>
-                       <!-- end of header -->
+                           <!-- header -->
+                            <div class="footer__cta__row__card__header mt-2 mb-1">
+                                <h2 class="f-3 clr-white-500">E-mail</h2>
+                            </div>
+                           <!-- end of header -->
 
-                       <!-- body -->
-                        <div class="footer__cta__row__card__body">
-                            <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:<?= CONTACT['mail']; ?>" title="Vamos conversar por e-mail?"><?= CONTACT['mail']; ?></a>
-                        </div>
-                       <!-- end of body -->
+                           <!-- body -->
+                            <div class="footer__cta__row__card__body">
+                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:<?= CONTACT['mail']; ?>" title="Vamos conversar por e-mail?"><?= CONTACT['mail']; ?></a>
+                            </div>
+                           <!-- end of body -->
 
-                   </div>
-                  <!-- end of card -->
+                       </div>
+                      <!-- end of card -->
 
-              </div>
-             <!-- end of row -->
+                  </div>
+                 <!-- end of row -->
 
+             </div>
          </div>
-     </div>
-    <!-- end of cta -->
+        <!-- end of cta -->
+    <?php endif; ?>
 
     <!-- content -->
     <div class="footer__content bg-blue-500">

@@ -224,11 +224,6 @@
       }
     }
   }
-
-  //breakpoint mobile
-  @include mq(sm){
-    position: fixed;
-  }
 }
 
 .header--active{

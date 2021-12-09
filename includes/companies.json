@@ -1,0 +1,44 @@
+{
+  "companies": [
+    {
+      "title": "Abratec",
+      "logo": "logo-abratec",
+      "description": {
+        "address": "R. Eucalipto, 420 - Bairro Arvoredo Contagem - MG",
+        "addressLink": "https://goo.gl/maps/1QQwRpaNSjbCiydt6",
+        "phone": "(31) 3371-7788",
+        "mail": "abratec@industriasrc.com.br"
+      }
+    },
+    {
+      "title": "BBTEC",
+      "logo": "logo-bbtec",
+      "description": {
+        "address": "Av. Dr. Ulisses Guimarães, 2775, Vila Conceição - Diadema - SP",
+        "addressLink": "https://goo.gl/maps/PELtvJrhrjLAFkSa7",
+        "phone": "(11) 3421-4896",
+        "mail": "comercial@barramentosblindados.com.br"
+      }
+    },
+    {
+      "title": "Industrial Tecno-Fix",
+      "logo": "logo-industrial-tecno-fix",
+      "description": {
+        "address": "Av. Dr. Ulisses Guimarães, 2775 - Vila Conceição - Diadema",
+        "addressLink": "https://goo.gl/maps/4C3qV1wc2eEEM7eT8",
+        "phone": "(11) 5563-5824",
+        "mail": "vendas@industriasrc.com.br"
+      }
+    },
+    {
+      "title": "KSB Borrachas",
+      "logo": "logo-ksb-borrachas",
+      "description": {
+        "address": "Avenida Riachuelo, 85 - Fundos - Vila Conceição Diadema - SP",
+        "addressLink": "https://goo.gl/maps/Czto9TTB29FTbaFD7",
+        "phone": "(11) 5563-5824",
+        "mail": "vendas@ksbborrachas.com.br"
+      }
+    }
+  ]
+}

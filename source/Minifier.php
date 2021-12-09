@@ -17,9 +17,9 @@ $homeCss->minify(dirname(__DIR__, 1) . "/assets/css/style.min.css");
 /**
  * CSS PAGES
  */
-//$pagesCss = new MatthiasMullie\Minify\CSS();
-//$pagesCss->add(dirname(__DIR__, 1) . "/assets/css/style-pages.css");
-//$pagesCss->minify(dirname(__DIR__, 1) . "/assets/css/style-pages.min.css");
+$pagesCss = new MatthiasMullie\Minify\CSS();
+$pagesCss->add(dirname(__DIR__, 1) . "/assets/css/style-pages.css");
+$pagesCss->minify(dirname(__DIR__, 1) . "/assets/css/style-pages.min.css");
 
 /**
  * CSS BLOG
@@ -57,12 +57,12 @@ $homeJs->minify(dirname(__DIR__, 1) . "/assets/js/script-home.min.js");
 /**
  * js
  */
-//$pagesJs = new MatthiasMullie\Minify\JS();
-//$pagesJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
-//$pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/menu.js");
-//$pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/toggle.js");
-//$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/scroll.js");
-//$pagesJs->minify(dirname(__DIR__, 1) . "/assets/js/script-pages.min.js");
+$pagesJs = new MatthiasMullie\Minify\JS();
+$pagesJs->add(dirname(__DIR__, 1) . "/assets/js/vendors/jquery.js");
+$pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/menu.js");
+$pagesJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/toggle.js");
+$homeJs->add(dirname(__DIR__, 1) . "/assets/js/theme/functions/scroll.js");
+$pagesJs->minify(dirname(__DIR__, 1) . "/assets/js/script-pages.min.js");
 
 /**
  * Error

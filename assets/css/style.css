@@ -1084,6 +1084,11 @@ body {
   width: 5px;
   height: 4px;
 }
+@media only screen and (max-width: 576px) {
+  .title h2 {
+    font-size: var(--fs-600);
+  }
+}
 
 .btn {
   display: inline-block !important;
@@ -1489,11 +1494,6 @@ body {
   .header__container__navbar__section__container__nav ul .menu-item-has-children .sub-menu li a {
     width: 100%;
     text-align: center;
-  }
-}
-@media only screen and (max-width: 576px) {
-  .header {
-    position: fixed;
   }
 }
 

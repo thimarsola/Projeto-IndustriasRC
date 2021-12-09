@@ -32,4 +32,11 @@
       }
     }
   }
+
+  //breakpoint mobile
+  @include mq(sm){
+    h2{
+      font-size: var(--fs-600);
+    }
+  }
 }
