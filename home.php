@@ -16,4 +16,12 @@
 <?php get_template_part('template-parts/home/home', 'certification'); ?>
 <!-- end of certification -->
 
+<!-- gallery -->
+<?php get_template_part('template-parts/home/home', 'gallery'); ?>
+<!-- end of gallery -->
+
+<!-- blog -->
+<?php get_template_part('template-parts/home/home', 'blog'); ?>
+<!-- end of blog -->
+
 <?php get_footer(); ?>
