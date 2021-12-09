@@ -1933,4 +1933,57 @@ body {
   }
 }
 
+.products {
+  position: relative;
+}
+.products::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40rem;
+  height: 55rem;
+  display: block;
+  content: "";
+  background-image: url("../images/vetor-topo.png");
+  background-size: contain;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.products::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 14rem;
+  height: 75.5rem;
+  display: block;
+  content: "";
+  background-image: url("../images/vetor-baixo.png");
+  background-size: contain;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+.products__row {
+  position: relative;
+  z-index: 1;
+}
+.products__row__card {
+  padding: calc(var(--gap) * 4) calc(var(--gap) * 2);
+}
+.products__row__card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 12px;
+  margin: 0 auto;
+  width: 14rem;
+  height: 10rem;
+  background-image: url("../images/background-products.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.products__row__card__header h3 {
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=style-pages.css.map */
