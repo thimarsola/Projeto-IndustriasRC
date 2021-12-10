@@ -403,6 +403,10 @@ body {
   align-items: center;
 }
 
+.ai-stretch {
+  align-items: stretch;
+}
+
 .f-column {
   flex-direction: column;
 }
