@@ -40,4 +40,25 @@
          <a rel="nofollow noopener noreferrer" class="link-white-500 f-4 t-bold" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?"><?= CONTACT['phone']['01']; ?></a>
      </div>
     <!-- end of cta -->
+
+    <!-- catalogue -->
+     <div class="content__row__aside__sidebar__catalogue mt-6">
+         <!-- header -->
+         <header class="content__row__aside__sidebar__catalogue__header title">
+             <h3 class="f-3 mb-1 t-left">Catálogo</h3>
+             <div class="title__divider jc-start">
+                 <span></span>
+                 <span></span>
+             </div>
+         </header>
+         <!-- end of header -->
+
+         <?php $baseurl = wp_get_upload_dir(); ?>
+
+         <a href="<?= $baseurl['baseurl']  . '/2021/catalogo-digital-industrias-rc.pdf'?>" class="btn btn-block btn-primary-500 t-center d-flex ai-center jc-center l-small" title="Baixe o nosso catálogo" target="_blank">
+             <i class="icon-file mr-1"></i>
+             Download Catálogo
+         </a>
+     </div>
+    <!-- end of catalogue -->
 </aside>

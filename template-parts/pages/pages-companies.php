@@ -49,7 +49,7 @@
 
                                <li>
                                    <p>
-                                       E-mail:
+                                       E-mail: <br>
                                        <a rel="nofollow noreferrer noopener" class="link-neutral-500" href="mailto:<?= formatPhone($key['description']['mail']); ?>" title="Envie um e-mail para a empresa <?= $key['title']; ?>" target="_blank"><?= $key['description']['mail']; ?></a>
                                    </p>
                                </li>

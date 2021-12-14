@@ -90,6 +90,16 @@
             }
           }
         }
+
+        &__catalogue{
+          .title{
+            margin-bottom: var(--fs-500) !important;
+
+            &__divider{
+              margin-top: 12px;
+            }
+          }
+        }
       }
     }
 

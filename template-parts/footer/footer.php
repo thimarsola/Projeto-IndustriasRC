@@ -21,7 +21,7 @@
                            <!-- body -->
                             <div class="footer__cta__row__card__body">
                                 <address>
-                                    <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC"><?= CONTACT['address']; ?></a>
+                                    <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC" target="_blank"><?= CONTACT['address']; ?></a>
                                 </address>
                             </div>
                            <!-- end of body -->
@@ -41,7 +41,7 @@
 
                            <!-- body -->
                             <div class="footer__cta__row__card__body">
-                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?"><?= CONTACT['phone']['01']; ?></a>
+                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?" target="_blank"><?= CONTACT['phone']['01']; ?></a>
                             </div>
                            <!-- end of body -->
 
@@ -60,7 +60,7 @@
 
                            <!-- body -->
                             <div class="footer__cta__row__card__body">
-                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:<?= CONTACT['mail']; ?>" title="Vamos conversar por e-mail?"><?= CONTACT['mail']; ?></a>
+                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:<?= CONTACT['mail']; ?>" title="Vamos conversar por e-mail?" target="_blank"><?= CONTACT['mail']; ?></a>
                             </div>
                            <!-- end of body -->
 
@@ -164,14 +164,14 @@
                                <li>
                                    <address class="d-flex ai-center l-small">
                                        <i class="icon-marker mr-1"></i>
-                                       <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC"><?= CONTACT['address']; ?></a>
+                                       <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC" target="_blank"><?= CONTACT['address']; ?></a>
                                    </address>
                                </li>
 
                                <li>
                                    <p class="d-flex ai-center l-small">
                                        <i class="icon-phone mr-1"></i>
-                                       <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?"><?= CONTACT['phone']['01']; ?></a>
+                                       <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?" target="_blank"><?= CONTACT['phone']['01']; ?></a>
                                    </p>
                                </li>
 
