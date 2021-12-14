@@ -36,3 +36,12 @@ function picture(string $name, string $alt, string $class = null, string $extens
         </picture>
         ';
 }
+
+/**
+ * Function for create a custom thumbnail size
+ */
+function ms_setup() {
+    add_image_size( 'og-image', 700, 500, true );
+    add_image_size( 'post-image', 730, 350, true );
+}
+add_action( 'after_setup_theme', 'ms_setup' );

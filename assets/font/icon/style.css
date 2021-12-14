@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icon';
-  src:  url('fonts/icon.eot?z06eq0');
-  src:  url('fonts/icon.eot?z06eq0#iefix') format('embedded-opentype'),
-    url('fonts/icon.ttf?z06eq0') format('truetype'),
-    url('fonts/icon.woff?z06eq0') format('woff'),
-    url('fonts/icon.svg?z06eq0#icon') format('svg');
+  src:  url('fonts/icon.eot?wbbzb5');
+  src:  url('fonts/icon.eot?wbbzb5#iefix') format('embedded-opentype'),
+    url('fonts/icon.ttf?wbbzb5') format('truetype'),
+    url('fonts/icon.woff?wbbzb5') format('woff'),
+    url('fonts/icon.svg?wbbzb5#icon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,12 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar:before {
+  content: "\e91f";
+}
+.icon-file:before {
+  content: "\e920";
+}
 .icon-anies-e-pinos-elasticos:before {
   content: "\e900";
 }

@@ -46,7 +46,11 @@
     <meta property="og:locale" content="<?= SITE["locale"]; ?>"/>
     <meta property="og:region" content="Brasil">
     <meta property="og:title" content="<?= SITE["name"] ?>">
-    <meta property="og:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>"/>
+    <?php if(!is_single()): ?>
+        <meta property="og:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>"/>
+    <?php else: ?>
+        <meta property="og:image" content="<?= get_the_post_thumbnail_url(get_the_ID(), 'og-imag'); ?>"/>
+    <?php endif; ?>
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="700">
     <meta property="og:image:height" content="500">

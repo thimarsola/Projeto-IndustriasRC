@@ -5,6 +5,7 @@ $whatsapp: #25D366;
 $light-blue: #EEF1F6;
 $blue: #005379;
 $dark-blue: #042C3A;
+$gray: #999;
 
 $colors: (
     "primary": (
@@ -27,5 +28,8 @@ $colors: (
     ),
     "dark-blue":(
         500: $dark-blue
+    ),
+    "gray":(
+        500: $gray
     )
 );

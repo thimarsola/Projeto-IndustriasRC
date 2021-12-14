@@ -20,8 +20,13 @@
 
                 if(is_page('Anéis e Pinos Elásticos')){
                     get_template_part('template-parts/pages/content', 'ring');
-                }elseif(is_page('Anéis de Retenção'))
+                }elseif(is_page('Anéis de Retenção')){
                     get_template_part('template-parts/pages/content', 'retention-ring');
+                }elseif (is_page('Anéis de Travamento')){
+                    get_template_part('template-parts/pages/content', 'locking-ring');
+                }elseif (is_page(['Molas Pratos', 'Barramento Blindado', 'Metal x Borracha'])){
+                    get_template_part('template-parts/pages/content', 'cta');
+                }
                 ?>
             </div>
             <!-- end of container -->

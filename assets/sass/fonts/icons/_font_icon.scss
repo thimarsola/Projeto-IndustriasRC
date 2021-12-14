@@ -27,6 +27,16 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar {
+  &:before {
+    content: $icon-calendar;
+  }
+}
+.icon-file {
+  &:before {
+    content: $icon-file;
+  }
+}
 .icon-anies-e-pinos-elasticos {
   &:before {
     content: $icon-anies-e-pinos-elasticos;

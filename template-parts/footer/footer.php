@@ -1,6 +1,6 @@
 <footer class="footer">
 
-    <?php if(!is_page(['Contato', 'Blog']) || is_single()): ?>
+    <?php if(!is_page(['Contato', 'Blog']) && !is_single() && !is_archive()): ?>
         <!-- cta -->
          <div class="footer__cta">
              <div class="container">
@@ -215,7 +215,7 @@
     <!-- copyright -->
     <div class="footer__content__copyright py-1 t-center">
         <div class="container">
-            <p><small>&COPY; <?= date('Y'); ?> - <?= SITE['name']; ?> - Todos os direitos reservados</small></p>
+            <p><small>&COPY; <?= date('Y'); ?> - <?= SITE['name']; ?> - <?= (is_page('Política de privacidade') ? 'Todos os direitos reservados' : '<a class="link-neutral-500" href="' .  get_the_permalink(get_page_by_title('Política de privacidade')) . '" target="_blank" title="Conheça a nossa Política de Privacidade">Todos os direitos reservados</a>') ?></small></p>
         </div>
     </div>
     <!-- end of copyright -->

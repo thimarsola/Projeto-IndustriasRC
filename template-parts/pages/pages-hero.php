@@ -23,7 +23,7 @@ if(is_page('Sobre nós')){
         <div class="hero__content clr-white-500 t-center">
             <!-- header -->
             <div class="hero__header mb-2">
-                <p class="t-bold f-7 l-small"><?= get_the_title(); ?></p>
+                <p class="t-bold f-7 l-small"><?= (is_archive() ? single_cat_title() : get_the_title()); ?></p>
             </div>
             <!-- end of header -->
 
@@ -70,7 +70,7 @@ if(is_page('Sobre nós')){
                     </li>
 
                     <li>
-                        <p class="t-bold l-small"><?= get_the_title(); ?></p>
+                        <p class="t-bold l-small"><?= (is_archive() ? single_cat_title() : get_the_title()); ?></p>
                     </li>
                 </ul>
 

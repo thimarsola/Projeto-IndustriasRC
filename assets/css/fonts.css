@@ -38,6 +38,14 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-calendar:before {
+  content: "\e91f";
+}
+
+.icon-file:before {
+  content: "\e920";
+}
+
 .icon-anies-e-pinos-elasticos:before {
   content: "\e900";
 }

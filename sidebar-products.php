@@ -9,14 +9,14 @@
 
          <ul>
              <?php
-             $pages = get_pages(['sort_order' => 'acs', 'exclude' => [35,33,31,5]]);
+             $pages = get_pages(['sort_order' => 'acs', 'exclude' => [35,33,31,5,94]]);
              foreach ($pages as $page):
                  ?>
                  <li class="<?= $page->post_title  == get_the_title() ? "active" : ''?>">
                      <?php if($page->post_title  == get_the_title()): ?>
                          <p class="t-bold clr-neutral-500"><?= $page->post_title; ?></p>
                      <?php else: ?>
-                         <a class="t-bold link-neutral-500" href="<?= $page->guid; ?>" title="Indústrias RC | <?= $page->post_title; ?>" target="_blank"><?= $page->post_title; ?></a>
+                         <a class="t-bold link-neutral-500" href="<?= $page->guid; ?>" title="Indústrias RC | <?= $page->post_title; ?>"><?= $page->post_title; ?></a>
                      <?php endif; ?>
 
                      <i class="icon-arrow-forward"></i>

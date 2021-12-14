@@ -97,9 +97,10 @@
       &__row{
         &__card{
           padding: calc(var(--gap) * 2);
+          display: flex;
+          gap: 0;
 
           &.strech{
-            display: flex;
             flex-flow: column;
           }
 

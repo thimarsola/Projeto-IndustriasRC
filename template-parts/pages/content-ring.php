@@ -1,7 +1,7 @@
 <!-- row -->
 <div class="content__row__container__row grid mt-6">
     <!-- card -->
-     <article class="content__row__container__row__card bg-white-500 shadow">
+     <article class="content__row__container__row__card bg-white-500 f-column shadow">
          <!-- icon -->
          <div class="content__row__container__row__card__icon t-center">
              <i class="icon-anies-e-pinos-elasticos clr-primary-500 f-8"></i>
@@ -16,7 +16,7 @@
 
          <!-- body -->
          <div class="content__row__container__row__card__body t-center">
-             <p class="t-small mb-4">Clique no botão abaixo para maiores informações sobre essa linha de produtos</p>
+             <p class="t-small">Clique no botão abaixo para maiores informações sobre essa linha de produtos</p>
 
              <a class="btn btn-primary-500 radius" href="<?= get_the_permalink(get_page_by_title('Anéis de Retenção')); ?>" title="Conheça essa nossa linha de produto" target="_blank">Saiba mais</a>
          </div>
@@ -25,7 +25,7 @@
     <!-- end of card -->
 
     <!-- card -->
-     <article class="content__row__container__row__card bg-white-500 shadow">
+     <article class="content__row__container__row__card bg-white-500 f-column shadow">
          <!-- icon -->
          <div class="content__row__container__row__card__icon t-center">
              <i class="icon-anies-e-pinos-elasticos clr-primary-500 f-8"></i>
@@ -40,7 +40,7 @@
 
          <!-- body -->
          <div class="content__row__container__row__card__body t-center">
-             <p class="t-small mb-4">Clique no botão abaixo para maiores informações sobre essa linha de produtos</p>
+             <p class="t-small">Clique no botão abaixo para maiores informações sobre essa linha de produtos</p>
 
              <a class="btn btn-primary-500 radius" href="<?= get_the_permalink(get_page_by_title('Anéis de Travamento')); ?>" title="Conheça essa nossa linha de produto" target="_blank">Saiba mais</a>
          </div>
@@ -49,7 +49,7 @@
     <!-- end of card -->
 
     <!-- card -->
-     <article class="content__row__container__row__card bg-white-500 shadow">
+     <article class="content__row__container__row__card bg-white-500 f-column shadow">
          <!-- icon -->
          <div class="content__row__container__row__card__icon t-center">
              <i class="icon-anies-e-pinos-elasticos clr-primary-500 f-8"></i>
@@ -64,7 +64,7 @@
 
          <!-- body -->
          <div class="content__row__container__row__card__body t-center">
-             <p class="t-small mb-4">Clique no botão abaixo para maiores informações sobre essa linha de produtos</p>
+             <p class="t-small">Clique no botão abaixo para maiores informações sobre essa linha de produtos</p>
 
              <a class="btn btn-primary-500 radius" href="<?= get_the_permalink(get_page_by_title('Pinos Elásticos')); ?>" title="Conheça essa nossa linha de produto" target="_blank">Saiba mais</a>
          </div>

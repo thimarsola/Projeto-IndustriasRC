@@ -1,11 +1,11 @@
 // var $j = jQuery.noConflict();
 
 $(document).ready(function () {
-    const path = $(location).attr("href");
-    const file = 'wp-content/themes/bfendodontia/source/Support/Sender.php';
+    const path = $(location).attr("href").split("contato/", 1).reverse().join('');
+    const file = 'wp-content/themes/industriasrc/source/Support/Sender.php';
 
     $('#form').submit(function () {
-        $(".contact__row__form__status").removeClass("d-none");
+        $(".contact__container__row__form__content__status").removeClass("d-none");
 
         $.ajax({
             url: path.concat(file),
@@ -13,14 +13,14 @@ $(document).ready(function () {
             cache: false,
             data: $('#form').serialize(),
             success: function (data) {
-                $('.contact__row__form__status').append(data);
+                $('.contact__container__row__form__content__status').append(data);
 
                 setTimeout(function (){
-                    $(".contact__row__form__status").addClass("d-none");
+                    $(".contact__container__row__form__content__status").addClass("d-none");
                 }, 3000);
             },
             error: function(){
-                $('.contact__row__form__status').append('Erro');
+                $('.contact__container__row__form__content__status').append('Erro');
             }
         });
         return false;
