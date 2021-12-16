@@ -1,12 +1,12 @@
 <!-- row -->
 <div class="content__row__container__row grid mt-6">
     <?php
-    $retentionList = file_get_contents(__DIR__ . "/../../includes/retention-rings.json");
-    $jsonRetention = json_decode($retentionList, true);
+    $pinList = file_get_contents(__DIR__ . "/../../includes/pin.json");
+    $jsonPin = json_decode($pinList, true);
 
     $baseurl = wp_get_upload_dir();
 
-    foreach ($jsonRetention['retention'] as $item):
+    foreach ($jsonPin['pin'] as $item):
         ?>
         <!-- card -->
         <article class="content__row__container__row__card bg-white-500 shadow strech">
@@ -31,11 +31,11 @@
                         <p class="t-small"><?= $key; ?></p>
                     <?php endforeach; ?>
 
-                    <p class="t-small mt-2">Tipo <?= $item['type']; ?> <span class="clr-primary-500">|</span> Norma <?= $item['standard']; ?> <span class="clr-primary-500">|</span> Dimensão <?= $item['dimension']; ?></p>
+                    <p class="t-small mt-2">Norma <?= $item['standard']; ?> <span class="clr-primary-500">|</span> Dimensão <?= $item['dimension']; ?></p>
                 </div>
                 <!-- end of text -->
 
-                <a class="btn btn-block btn-primary-500 radius" href="<?= $baseurl['baseurl']  . '/2021/' . $item['file']; ?>" title="Confira o nosso documento técnico" target="_blank">Saiba mais</a>
+                <a class="btn btn-primary-500 radius" href="<?= $baseurl['baseurl']  . '/2021/' . $item['file']; ?>" title="Confira o nosso documento técnico" target="_blank">Saiba mais</a>
             </div>
             <!-- end of body -->
         </article>

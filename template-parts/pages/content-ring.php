@@ -52,7 +52,7 @@
      <article class="content__row__container__row__card bg-white-500 f-column shadow">
          <!-- icon -->
          <div class="content__row__container__row__card__icon t-center">
-             <i class="icon-anies-e-pinos-elasticos clr-primary-500 f-8"></i>
+             <i class="icon-pino-elastico clr-primary-500 f-8"></i>
          </div>
          <!-- end of icon -->
 

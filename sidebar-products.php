@@ -8,8 +8,17 @@
          <!-- end of header -->
 
          <ul>
+             <li class="<?= 'Usinagem'  == get_the_title() ? "active" : ''?>">
+                 <?php if('Usinagem'  == get_the_title()): ?>
+                     <p class="t-bold clr-neutral-500">Usinagem</p>
+                 <?php else: ?>
+                     <a class="t-bold link-neutral-500" href="<?= get_the_permalink(get_page_by_title('Usinagem')); ?>" title="Indústrias RC | Usinagem">Usinagem</a>
+                 <?php endif; ?>
+                 <i class="icon-arrow-forward"></i>
+             </li>
+
              <?php
-             $pages = get_pages(['sort_order' => 'acs', 'exclude' => [35,33,31,5,94]]);
+             $pages = get_pages(['sort_order' => 'ASC', 'exclude' => [9,35,33,31,5,94]]);
              foreach ($pages as $page):
                  ?>
                  <li class="<?= $page->post_title  == get_the_title() ? "active" : ''?>">
@@ -18,7 +27,6 @@
                      <?php else: ?>
                          <a class="t-bold link-neutral-500" href="<?= $page->guid; ?>" title="Indústrias RC | <?= $page->post_title; ?>"><?= $page->post_title; ?></a>
                      <?php endif; ?>
-
                      <i class="icon-arrow-forward"></i>
                  </li>
 

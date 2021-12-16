@@ -11,8 +11,8 @@
         <!-- card -->
         <article class="content__row__container__row__card bg-white-500 shadow strech">
             <!-- icon -->
-            <div class="content__row__container__row__card__icon t-center">
-                <i class="icon-anies-e-pinos-elasticos clr-primary-500 f-8"></i>
+            <div class="content__row__container__row__card__icon t-center bg-none">
+                <img src="<?= image($item['image']); ?>" alt="Conheça mais sobre este produto">
             </div>
             <!-- end of icon -->
 

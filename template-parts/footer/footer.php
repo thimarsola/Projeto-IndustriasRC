@@ -10,38 +10,17 @@
 
                       <!-- card -->
                        <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
-                           <i class="icon-marker f-6 clr-blue-500"></i>
+                           <i class="icon-mail f-6 clr-blue-500"></i>
 
                            <!-- header -->
                             <div class="footer__cta__row__card__header mt-2 mb-1">
-                                <h2 class="f-3 clr-white-500">Endereço</h2>
+                                <h2 class="f-3 clr-white-500">Contato</h2>
                             </div>
                            <!-- end of header -->
 
                            <!-- body -->
                             <div class="footer__cta__row__card__body">
-                                <address>
-                                    <a rel="nofollow noopener noreferrer" class="link-white-500" href="<?= CONTACT['addressLink']; ?>" title="Venha conhecer as Indústrias RC" target="_blank"><?= CONTACT['address']; ?></a>
-                                </address>
-                            </div>
-                           <!-- end of body -->
-
-                       </div>
-                      <!-- end of card -->
-
-                      <!-- card -->
-                       <div class="footer__cta__row__card bg-primary-500 radius shadow p-3">
-                           <i class="icon-phone f-6 clr-blue-500"></i>
-
-                           <!-- header -->
-                            <div class="footer__cta__row__card__header mt-2 mb-1">
-                                <h2 class="f-3 clr-white-500">Telefone</h2>
-                            </div>
-                           <!-- end of header -->
-
-                           <!-- body -->
-                            <div class="footer__cta__row__card__body">
-                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="tel:<?= (formatPhone(CONTACT['phone']['01'])); ?>" title="Vamos conversar por telefone?" target="_blank"><?= CONTACT['phone']['01']; ?></a>
+                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:<?= CONTACT['mail']; ?>" title="Vamos conversar por e-mail?" target="_blank"><?= CONTACT['mail']; ?></a>
                             </div>
                            <!-- end of body -->
 
@@ -54,13 +33,13 @@
 
                            <!-- header -->
                             <div class="footer__cta__row__card__header mt-2 mb-1">
-                                <h2 class="f-3 clr-white-500">E-mail</h2>
+                                <h2 class="f-3 clr-white-500">Trabalhe conosco</h2>
                             </div>
                            <!-- end of header -->
 
                            <!-- body -->
                             <div class="footer__cta__row__card__body">
-                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:<?= CONTACT['mail']; ?>" title="Vamos conversar por e-mail?" target="_blank"><?= CONTACT['mail']; ?></a>
+                                <a rel="nofollow noopener noreferrer" class="link-white-500" href="mailto:curriculo@industriasrc.com.br" title="Vamos conversar por e-mail?" target="_blank">curriculo@industriasrc.com.br</a>
                             </div>
                            <!-- end of body -->
 
@@ -147,7 +126,7 @@
 
                       <!-- header -->
                        <div class="footer__content__row__card__header mb-3">
-                           <h2 class="f-3 clr-white-500">Contato</h2>
+                           <h2 class="f-3 clr-white-500">Informações</h2>
                        </div>
                       <!-- end of header -->
 
