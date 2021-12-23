@@ -11,7 +11,6 @@
                      <?= picture('galeria-' . str_pad($i,2, 0, STR_PAD_LEFT), 'Conheça a nossa empresa', 'img-fluid'); ?>
                  </a>
              <?php endfor; ?>
-             <?php  ?>
          </div>
         <!-- end of row -->
     </div>
