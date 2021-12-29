@@ -180,6 +180,6 @@
 
 <!-- map -->
 <div class="map">
-    <iframe class="img-fluid" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.616102342348!2d-46.60884578558574!3d-23.68968298461934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a9123827b9f%3A0x9663b7852d65964a!2sIRC%20-%20INDUSTRIAL%20TECNO-FIX%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1639398134681!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.616102342348!2d-46.60884578558574!3d-23.68968298461934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a9123827b9f%3A0x9663b7852d65964a!2sIRC%20-%20INDUSTRIAL%20TECNO-FIX%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1639398134681!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
 </div>
 <!-- end of map -->

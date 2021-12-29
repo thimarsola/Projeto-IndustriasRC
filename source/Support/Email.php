@@ -27,7 +27,8 @@ class Email
         $this->mail->setLanguage("br");
 
         $this->mail->SMTPAuth = true;
-        $this->mail->SMTPSecure = "tls";
+        // $this->mail->SMTPSecure = "tls";
+        $this->mail->SMTPSecure = "ssl";
         $this->mail->CharSet = "utf-8";
 
         $this->mail->Host = MAIL["host"];
