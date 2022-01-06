@@ -32,7 +32,7 @@
 
                       <!-- certification -->
                        <div class="about__row__content__body__certification mt-5 mb-8">
-                           <p class="l-small"><strong class="d-flex ai-center"><i class="icon-check clr-primary-500 f-3 mr-1"></i>Empresa Certificada ISO 9001</strong></p>
+                           <p class="l-small"><strong class="d-flex ai-center"><i class="icon-check clr-primary-500 f-3 mr-1"></i>Empresas Certificadas ISO 9001</strong></p>
                        </div>
                       <!-- end of certification -->
 

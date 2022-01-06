@@ -1,5 +1,5 @@
 <!-- companies -->
-<section class="companies py-s">
+<section class="companies py-s <?= (is_page('Sobre nós') ? 'bg-gradient' : null); ?>">
     <div class="container">
 
         <!-- header -->

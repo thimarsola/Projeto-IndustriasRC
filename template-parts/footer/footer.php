@@ -178,7 +178,7 @@
 
                       <!-- body -->
                        <div class="footer__content__row__card__body t-justify mb-3">
-                           <p>Aqui você encontra equipamentos e acessórios de qualidade, que atendem à todos os requisitos e normas, além de profissionais capacitados, que visam a qualidade do serviço e satisfação do cliente.</p>
+                           <p>Aqui você encontra equipamentos e acessórios de qualidade, que atendem a todos os requisitos e normas, além de profissionais capacitados, que visam a qualidade do serviço e satisfação do cliente.</p>
                        </div>
                       <!-- end of body -->
                   </div>

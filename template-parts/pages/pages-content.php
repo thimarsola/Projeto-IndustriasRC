@@ -28,7 +28,7 @@
                     get_template_part('template-parts/pages/content', 'locking-ring');
                 }elseif (is_page('Pinos Elásticos')){
                     get_template_part('template-parts/pages/content', 'pin');
-                }elseif (is_page(['Molas Pratos', 'Barramento Blindado', 'Metal x Borracha'])){
+                }elseif (is_page(['Molas Prato', 'Barramento Blindado', 'Metal x Borracha'])){
                     get_template_part('template-parts/pages/content', 'cta');
                 }
                 ?>

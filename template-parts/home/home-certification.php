@@ -6,13 +6,13 @@
 
               <!-- header -->
               <header class="certification__row__content__header mb-4">
-                  <h2 class="f-5 clr-white-500">Empresa certificada ISO 9001</h2>
+                  <h2 class="f-5 clr-white-500">Empresas certificadas ISO 9001</h2>
               </header>
               <!-- end of header -->
 
               <!-- body -->
                <div class="certification__row__content__body t-justify mb-8">
-                   <p>As Indústrias RC tem orgulho de ser uma empresa certificada ISO 9001:2015. Certificação que reafirma o nosso compromisso com a qualidade dos nossos produtos!</p>
+                   <p>As Indústrias RC tem orgulho de ser um grupo de empresas certificadas ISO 9001. Certificação que reafirma o nosso compromisso com a qualidade dos nossos produtos!</p>
                    <br>
                    <p>A certificação ISO visa promover a normatização de produtos, serviços e processos, com o objetivo de garantir a forma como trabalhamos e rastreabilidade dos mesmos.</p>
                    <br>

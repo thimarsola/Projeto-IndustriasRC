@@ -1,7 +1,13 @@
 <section class="gallery py-s">
     <div class="container">
         <!-- header -->
-         <?= title('gallery__header', 'Conheça a nossa empresa', 'Galeria de Fotos'); ?>
+        <header class="gallery__header title">
+            <h2 class="f-7 mb-3">Galeria de Fotos</h2>
+            <div class="title__divider">
+                <span></span>
+                <span></span>
+            </div>
+        </header>
         <!-- end of header -->
 
         <!-- row -->
