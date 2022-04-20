@@ -20,7 +20,8 @@
     "gulp": "^4.0.2",
     "gulp-image": "^6.2.1",
     "gulp-watch": "^5.0.1",
-    "gulp-webp": "^4.0.1"
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.50.1"
   },
   "dependencies": {
     "jquery": "^3.6.0",

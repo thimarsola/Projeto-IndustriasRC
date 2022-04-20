@@ -2406,6 +2406,38 @@ body {
   transition: all 300ms ease-in-out;
 }
 
+.catalogues__row {
+  grid-template-columns: repeat(3, 1fr);
+}
+.catalogues__row__card {
+  padding: calc(var(--gap) * 2) var(--gap);
+}
+.catalogues__row__card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 14rem;
+  height: 10rem;
+  background-image: url("../images/background-products.jpg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.catalogues__row__card__header h3 {
+  font-size: 2rem;
+}
+@media only screen and (max-width: 768px) {
+  .catalogues__row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 576px) {
+  .catalogues__row {
+    grid-template-columns: 1fr;
+  }
+}
+
 .swal2-popup.swal2-toast {
   box-sizing: border-box;
   grid-column: 1/4 !important;
