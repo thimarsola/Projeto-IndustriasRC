@@ -53,6 +53,12 @@
                                        <a rel="nofollow noreferrer noopener" class="link-neutral-500" href="mailto:<?= formatPhone($key['description']['mail']); ?>" title="Envie um e-mail para a empresa <?= $key['title']; ?>" target="_blank"><?= $key['description']['mail']; ?></a>
                                    </p>
                                </li>
+
+                               <?php if(!$key['description']['website'] == null): ?>
+                                   <li>
+                                       <a rel="nofollow noopener noreferrer" class="link-neutral-500" href="<?= $key['description']['website']; ?>" title="Visite o website <?= $key['title']; ?>" target="_blank"><?= str_replace('https://', null, $key['description']['website']); ?></a>
+                                   </li>
+                               <?php endif; ?>
                            </ul>
                        </div>
                       <!-- end of body -->
