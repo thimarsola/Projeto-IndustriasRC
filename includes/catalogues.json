@@ -2,11 +2,13 @@
   "catalogues": [
     {
       "title": "Catálogo Indústrias RC",
-      "file": "catalogo-digital-industrias-rc.pdf"
+      "file": "catalogo-digital-industrias-rc.pdf",
+      "url": null
     },
     {
       "title": "Catálogo KSB Borrachas",
-      "file": "catalogo-ksb-borrachas.pdf"
+      "file": null,
+      "url": "https://www.ircautomotiva.com.br"
     }
   ]
 }

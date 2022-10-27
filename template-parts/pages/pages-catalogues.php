@@ -36,9 +36,18 @@
                     <div class="catalogues__row__card__body t-center">
                         <p class="t-small mb-4">Clique no botão abaixo para mais informações sobre esse catálogo</p>
 
+                        <?php if(!$catalogue['file'] === null): ?>
+
                         <a href="<?= $baseurl['baseurl']  . '/2021/' . $catalogue['file']; ?>" class="btn btn-block btn-primary-500 radius" title="Baixe o nosso catálogo" target="_blank">
                             Saiba mais
                         </a>
+
+                        <?php else: ?>
+                        <a href="<?= $catalogue['url']; ?>" class="btn btn-block btn-primary-500 radius" title="Baixe o nosso catálogo" target="_blank">
+                            Saiba mais
+                        </a>
+                        <?php endif; ?>
+
                     </div>
                     <!-- end of body -->
                 </article>
