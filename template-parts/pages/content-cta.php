@@ -11,7 +11,7 @@
          }elseif (is_page('Barramento Blindado')){
              $link = 'http://www.barramentosblindados.com.br/';
          }else{
-             $link = 'https://www.ksbborrachas.com.br/';
+             $link = 'https://www.ircautomotiva.com.br/';
          }
          ?>
 
