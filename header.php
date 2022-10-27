@@ -7,14 +7,14 @@
     <!--CANONICAL-->
     <link rel="canonical" href="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
     <base href="<?= get_site_url(); ?>">
-    <link rel="alternate" href="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>" hreflang="x-default" />
+   <link rel="alternate" href="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>" hreflang="x-default">
 
     <title>
         <?php
         if (is_home()) {
             echo SITE['name'];
         } elseif (is_category()) {
-            echo single_cat_title() . " - " . SITE["name"];;
+            echo single_cat_title() . " - " . SITE["name"];
         } elseif (is_404()) {
             echo SITE['name'];
         } else {
@@ -45,9 +45,10 @@
     <meta property="og:locale" content="<?= SITE["locale"]; ?>">
     <meta property="og:region" content="Brasil">
     <meta property="og:title" content="<?= SITE["name"] ?>">
-    <?php if (!is_single()) : ?>
+
+    <?php if(!is_single()): ?>
         <meta property="og:image" content="<?= get_template_directory_uri() . '/assets/images/' . SITE["image"]; ?>">
-    <?php else : ?>
+    <?php else: ?>
         <meta property="og:image" content="<?= get_the_post_thumbnail_url(get_the_ID(), 'og-imag'); ?>">
     <?php endif; ?>
     <meta property="og:image:type" content="image/png">
@@ -56,7 +57,9 @@
     <meta property="og:type" content="article">
     <meta property="og:url" content="<?= (is_home() || is_404() ? get_site_url() : get_page_link()); ?>">
     <meta property="og:description" content="<?= SITE["desc"]; ?>">
-    <meta property="og:site_name" content="<?= SITE["name"] ?>"> <?php wp_head(); ?>
+    <meta property="og:site_name" content="<?= SITE["name"] ?>"> 
+
+    <?php wp_head(); ?>
 
     <!-- SCHEMA.ORG -->
     <meta itemprop="name" content="<?= SITE["name"] ?>">
