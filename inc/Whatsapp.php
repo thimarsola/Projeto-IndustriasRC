@@ -10,15 +10,16 @@
  * @return string
  */
 
-function whatsapp(string $phone, string $message, string $text = NULL, string $class = NULL, string $title = 'Vamos conversar?'): string{
+function whatsapp(string $phone, string $message, string $text = NULL, string $class = NULL, string $title = 'Vamos conversar?'): string
+{
 
-    if($class == NULL){
+    if ($class == NULL) {
         $dataClass = '';
-    }else{
+    } else {
         $dataClass = 'class="' . $class . '"';
     }
 
-    $whatsapp = '<a rel="nofollow noreferrer noopener" ' . $dataClass . ' href="https://api.whatsapp.com/send?phone=55' . $phone . '&text=' . urlencode($message) . '" target="_blank" title="' . $title . '">' . $text . '</a>';
+    $whatsapp = '<a rel="nofollow noreferrer noopener" ' . $dataClass . ' href="https://api.whatsapp.com/send?phone=55' . $phone . esc_html('&text=') . urlencode($message) . '" target="_blank" title="' . $title . '">' . $text . '</a>';
 
     return $whatsapp;
 }
