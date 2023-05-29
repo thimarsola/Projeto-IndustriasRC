@@ -29,18 +29,14 @@ remove_action('wp_head', 'rest_output_link_wp_head', 10);
 remove_action('wp_head', 'robots');
 remove_filter('wp_robots', 'wp_robots_max_image_preview_large');
 
-//fix close tag
-if (!is_admin() && (!defined('DOING_AJAX') || (defined('DOING_AJAX') && !DOING_AJAX))) {
-    ob_start('html5_slash_fixer');
-    add_action('shutdown', 'html5_slash_fixer_flush');
+/**
+ * Fix self-closing link tags.
+ */
+function disable_self_closing_tags(): void
+{
+    ob_start(function ($input) {
+        return str_replace('/>', '>', $input);
+    });
 }
 
-function html5_slash_fixer($buffer)
-{
-    return str_replace(' />', '>', $buffer);
-}
-
-function html5_slash_fixer_flush()
-{
-    ob_end_flush();
-}
+add_action('wp_head', 'disable_self_closing_tags', 1);
